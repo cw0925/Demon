@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC2C6D0D1F39AC4F00262B39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C6D0C1F39AC4F00262B39 /* AppDelegate.swift */; };
-		CC2C6D0F1F39AC4F00262B39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C6D0E1F39AC4F00262B39 /* ViewController.swift */; };
 		CC2C6D121F39AC4F00262B39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2C6D101F39AC4F00262B39 /* Main.storyboard */; };
 		CC2C6D141F39AC4F00262B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2C6D131F39AC4F00262B39 /* Assets.xcassets */; };
 		CC2C6D171F39AC4F00262B39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2C6D151F39AC4F00262B39 /* LaunchScreen.storyboard */; };
@@ -35,12 +34,11 @@
 
 /* Begin PBXFileReference section */
 		CC2C6D091F39AC4F00262B39 /* Demon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demon.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC2C6D0C1F39AC4F00262B39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC2C6D0E1F39AC4F00262B39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC2C6D0C1F39AC4F00262B39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		CC2C6D111F39AC4F00262B39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC2C6D131F39AC4F00262B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC2C6D131F39AC4F00262B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		CC2C6D161F39AC4F00262B39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CC2C6D181F39AC4F00262B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2C6D181F39AC4F00262B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		CC2C6D1D1F39AC4F00262B39 /* DemonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2C6D211F39AC4F00262B39 /* DemonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonTests.swift; sourceTree = "<group>"; };
 		CC2C6D231F39AC4F00262B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,12 +95,7 @@
 		CC2C6D0B1F39AC4F00262B39 /* Demon */ = {
 			isa = PBXGroup;
 			children = (
-				CC2C6D0C1F39AC4F00262B39 /* AppDelegate.swift */,
-				CC2C6D0E1F39AC4F00262B39 /* ViewController.swift */,
-				CC2C6D101F39AC4F00262B39 /* Main.storyboard */,
-				CC2C6D131F39AC4F00262B39 /* Assets.xcassets */,
-				CC2C6D151F39AC4F00262B39 /* LaunchScreen.storyboard */,
-				CC2C6D181F39AC4F00262B39 /* Info.plist */,
+				CC2C6D3A1F39AD2700262B39 /* Classes */,
 			);
 			path = Demon;
 			sourceTree = "<group>";
@@ -123,6 +116,50 @@
 				CC2C6D2E1F39AC5000262B39 /* Info.plist */,
 			);
 			path = DemonUITests;
+			sourceTree = "<group>";
+		};
+		CC2C6D3A1F39AD2700262B39 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C6D3E1F39AD3600262B39 /* Other */,
+				CC2C6D3B1F39AD2700262B39 /* Circle */,
+				CC2C6D3C1F39AD2700262B39 /* My */,
+				CC2C6D3D1F39AD2700262B39 /* News */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CC2C6D3B1F39AD2700262B39 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		CC2C6D3C1F39AD2700262B39 /* My */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		CC2C6D3D1F39AD2700262B39 /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CC2C6D3E1F39AD3600262B39 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C6D0C1F39AC4F00262B39 /* AppDelegate.swift */,
+				CC2C6D101F39AC4F00262B39 /* Main.storyboard */,
+				CC2C6D131F39AC4F00262B39 /* Assets.xcassets */,
+				CC2C6D151F39AC4F00262B39 /* LaunchScreen.storyboard */,
+				CC2C6D181F39AC4F00262B39 /* Info.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +230,7 @@
 				TargetAttributes = {
 					CC2C6D081F39AC4F00262B39 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q3A9R265EU;
 						ProvisioningStyle = Automatic;
 					};
 					CC2C6D1C1F39AC4F00262B39 = {
@@ -259,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC2C6D0F1F39AC4F00262B39 /* ViewController.swift in Sources */,
 				CC2C6D0D1F39AC4F00262B39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +339,7 @@
 				CC2C6D111F39AC4F00262B39 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CC2C6D151F39AC4F00262B39 /* LaunchScreen.storyboard */ = {
@@ -310,6 +348,7 @@
 				CC2C6D161F39AC4F00262B39 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q3A9R265EU;
 				INFOPLIST_FILE = Demon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CW.Demon;
@@ -424,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q3A9R265EU;
 				INFOPLIST_FILE = Demon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CW.Demon;
