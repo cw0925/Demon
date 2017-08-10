@@ -740,6 +740,7 @@
 					"$(PROJECT_DIR)/Demon/Classes/Lib/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/Demon/Classes/Lib/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = CW.Demon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/afarsoft/Desktop/iOS/Demon/Demon/Classes/Other/ShareSDK-Bridging-Header.h";
@@ -768,6 +769,7 @@
 					"$(PROJECT_DIR)/Demon/Classes/Lib/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/Demon/Classes/Lib/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = CW.Demon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/afarsoft/Desktop/iOS/Demon/Demon/Classes/Other/ShareSDK-Bridging-Header.h";

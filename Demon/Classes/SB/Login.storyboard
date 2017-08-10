@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,42 +21,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="li02" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-wP-4i0">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="li02" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-wP-4i0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0n-i2-E8A">
-                                <rect key="frame" x="80" y="587" width="60" height="60"/>
+                                <rect key="frame" x="47" y="587" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="XpW-bU-TTK"/>
-                                    <constraint firstAttribute="width" constant="60" id="Xw4-he-2cB"/>
+                                    <constraint firstAttribute="height" constant="60" id="veo-uO-9L7"/>
+                                    <constraint firstAttribute="width" constant="60" id="wl0-dN-5qo"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="login_ico_qq"/>
                                 <connections>
-                                    <action selector="qqLogin:" destination="KEm-DC-jhG" eventType="touchUpInside" id="PxC-y6-6tJ"/>
+                                    <action selector="qqLogin:" destination="KEm-DC-jhG" eventType="touchUpInside" id="TFe-No-2uL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqd-uT-5gB">
-                                <rect key="frame" x="234" y="587" width="60" height="60"/>
+                                <rect key="frame" x="267" y="587" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="1UM-3Y-akj"/>
-                                    <constraint firstAttribute="width" constant="60" id="sUH-OV-DJM"/>
+                                    <constraint firstAttribute="height" constant="60" id="fZN-B6-hsT"/>
+                                    <constraint firstAttribute="width" constant="60" id="jI8-g0-cJV"/>
                                 </constraints>
                                 <state key="normal" image="login_ico_wechat"/>
                                 <connections>
-                                    <action selector="weixinLogin:" destination="KEm-DC-jhG" eventType="touchUpInside" id="9Of-UV-DVB"/>
+                                    <action selector="weixinLogin:" destination="KEm-DC-jhG" eventType="touchUpInside" id="xV4-Eq-zGO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dc4-Gh-aIN">
+                                <rect key="frame" x="157" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1AE-1J-evG"/>
+                                    <constraint firstAttribute="height" constant="60" id="sRY-ua-T5A"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="login_ico_weibo"/>
+                                <connections>
+                                    <action selector="weiboLogin:" destination="KEm-DC-jhG" eventType="touchUpInside" id="HEa-5j-QxO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zqd-uT-5gB" firstAttribute="leading" secondItem="Dc4-Gh-aIN" secondAttribute="trailing" constant="50" id="2lD-yy-XHK"/>
                             <constraint firstAttribute="trailing" secondItem="zY5-wP-4i0" secondAttribute="trailing" id="D5S-aB-9pp"/>
-                            <constraint firstItem="hEy-bW-nMh" firstAttribute="top" secondItem="C0n-i2-E8A" secondAttribute="bottom" constant="20" id="FqI-rS-scR"/>
                             <constraint firstItem="zY5-wP-4i0" firstAttribute="top" secondItem="PEn-a0-gL4" secondAttribute="top" id="SST-Or-43N"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zqd-uT-5gB" secondAttribute="trailing" constant="65" id="cnS-fe-V8b"/>
+                            <constraint firstItem="hEy-bW-nMh" firstAttribute="top" secondItem="zqd-uT-5gB" secondAttribute="bottom" constant="20" id="dFh-8O-4PD"/>
                             <constraint firstItem="hEy-bW-nMh" firstAttribute="top" secondItem="zY5-wP-4i0" secondAttribute="bottom" id="eLo-oL-z8U"/>
                             <constraint firstItem="zY5-wP-4i0" firstAttribute="leading" secondItem="PEn-a0-gL4" secondAttribute="leading" id="fCM-xi-8CB"/>
-                            <constraint firstItem="hEy-bW-nMh" firstAttribute="top" secondItem="zqd-uT-5gB" secondAttribute="bottom" constant="20" id="hTC-sa-MFk"/>
-                            <constraint firstItem="C0n-i2-E8A" firstAttribute="leading" secondItem="PEn-a0-gL4" secondAttribute="leadingMargin" constant="64" id="jOn-He-Jxr"/>
+                            <constraint firstItem="Dc4-Gh-aIN" firstAttribute="centerX" secondItem="PEn-a0-gL4" secondAttribute="centerX" id="lDs-z5-aXH"/>
+                            <constraint firstItem="Dc4-Gh-aIN" firstAttribute="leading" secondItem="C0n-i2-E8A" secondAttribute="trailing" constant="50" id="vo5-Eg-S8k"/>
+                            <constraint firstItem="hEy-bW-nMh" firstAttribute="top" secondItem="C0n-i2-E8A" secondAttribute="bottom" constant="20" id="vtd-PX-Vsq"/>
+                            <constraint firstItem="hEy-bW-nMh" firstAttribute="top" secondItem="Dc4-Gh-aIN" secondAttribute="bottom" constant="20" id="wGQ-bF-LUR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -70,5 +82,6 @@
         <image name="li02" width="700" height="1050"/>
         <image name="login_ico_qq" width="60" height="60"/>
         <image name="login_ico_wechat" width="60" height="60"/>
+        <image name="login_ico_weibo" width="60" height="60"/>
     </resources>
 </document>

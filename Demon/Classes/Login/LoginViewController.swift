@@ -22,16 +22,62 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func qqLogin(_ sender: UIButton) {
-        ShareSDK.getUserInfo(SSDKPlatformType.typeQQ) { (state, user, error) in
-            if state == SSDKResponseState.success{
-                print("成功");
-            }else{
-               print("失败");
+        ShareSDK.getUserInfo(SSDKPlatformType.typeQQ) { (state : SSDKResponseState, user : SSDKUser?, error : Error?) in
+            switch state{
+                
+            case SSDKResponseState.success:
+                print("授权成功,用户信息为\(String(describing: user))\n ----- 授权凭证为\(user?.credential)")
+                UIApplication.shared.keyWindow?.rootViewController = BaseTabBarController()
+            case SSDKResponseState.fail:
+                print("授权失败,错误描述:\(error)")
+            case SSDKResponseState.cancel:
+                print("操作取消")
+                
+            default:
+                break
             }
+            
         }
+
     }
     
     @IBAction func weixinLogin(_ sender: UIButton) {
+        ShareSDK.getUserInfo(SSDKPlatformType.typeWechat) { (state : SSDKResponseState, user : SSDKUser?, error : Error?) in
+            switch state{
+                
+            case SSDKResponseState.success:
+                print("授权成功,用户信息为\(String(describing: user))\n ----- 授权凭证为\(user?.credential)")
+                UIApplication.shared.keyWindow?.rootViewController = BaseTabBarController()
+            case SSDKResponseState.fail:
+                print("授权失败,错误描述:\(error)")
+            case SSDKResponseState.cancel:
+                print("操作取消")
+                
+            default:
+                break
+            }
+            
+        }
     }
+    
+    @IBAction func weiboLogin(_ sender: UIButton) {
+        ShareSDK.getUserInfo(SSDKPlatformType.typeSinaWeibo) { (state : SSDKResponseState, user : SSDKUser?, error : Error?) in
+            switch state{
+                
+            case SSDKResponseState.success:
+                print("授权成功,用户信息为\(String(describing: user))\n ----- 授权凭证为\(user?.credential)")
+                UIApplication.shared.keyWindow?.rootViewController = BaseTabBarController()
+            case SSDKResponseState.fail:
+                print("授权失败,错误描述:\(error)")
+            case SSDKResponseState.cancel:
+                print("操作取消")
+                
+            default:
+                break
+            }
+            
+        }
+    }
+
 
 }
